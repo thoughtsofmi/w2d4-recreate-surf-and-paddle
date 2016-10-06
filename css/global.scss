@@ -1,0 +1,34 @@
+@import 'settings';
+@import '../bootstrap-sass-3.3.7/assets/stylesheets/bootstrap';
+
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+}
+.background {
+    background: url('../img/backgroundheader.jpeg');
+    background: cover;
+    height: 520px;
+    weight: 100%;
+}
+.superlarge {
+    font-size: 100px;
+    color: $color1;
+}
+.panel1 {
+    margin: $margin $margin $margin 100px;
+}
+.blogtitle {
+    font-size: 50px;
+    color: $color2;
+}
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex:4;
+    &>img {
+        width: 48vh;
+    }
+}
