@@ -1,6 +1,8 @@
 $color1: white;
 $color2: #083452;
-$gradient: linear-gradient($color1,$color2);
+$colorStart: rgba(30, 91, 143,.5);
+$colorEnd: rgba(34, 111, 170, 0.4);
+$gradient: linear-gradient($colorStart,$colorEnd);
 $padding: 100px;
 $paddingHover: 100px;
-$margin: 60px;
+$margin: 50px;

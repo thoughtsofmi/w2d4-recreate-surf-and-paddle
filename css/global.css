@@ -7745,10 +7745,10 @@ body {
 }
 
 .background {
-  background: url("../img/backgroundheader.jpeg");
+  background: linear-gradient(rgba(30, 91, 143, 0.5), rgba(34, 111, 170, 0.4)), url("../img/backgroundheader.jpeg");
   background: cover;
   height: 520px;
-  weight: 100%;
+  width: 100%;
 }
 
 .superlarge {
@@ -7756,21 +7756,141 @@ body {
   color: white;
 }
 
+li > img {
+  height: 20px;
+}
+
 .panel1 {
-  margin: 60px 60px 60px 100px;
+  margin: 50px 50px 50px 100px;
 }
 
 .blogtitle {
   font-size: 50px;
   color: #083452;
+  font-weight: bold;
 }
 
-.flexContainer {
+.flexbox {
   display: flex;
-  flex-wrap: wrap;
-  flex: 4;
+  flex-direction: column;
+  flex: 12;
+  width: 100%;
 }
 
-.flexContainer > img {
-  width: 48vh;
+.pic1 {
+  background: linear-gradient(rgba(30, 91, 143, 0.5), rgba(34, 111, 170, 0.4)), url("http://unsplash.it/300?image-222?");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vw;
+  flex: 3;
+  display: flex;
+  align-items: flex-end;
+}
+
+.pic1text {
+  font-size: 3vw;
+  flex: 1;
+}
+
+.pic1:hover {
+  background-image: url("http://unsplash.it/300?image=222");
+}
+
+.pic1text:hover {
+  color: white;
+}
+
+.pic2 {
+  background-image: linear-gradient(rgba(30, 91, 143, 0.5), rgba(34, 111, 170, 0.4)), url("http://unsplash.it/300?image=434");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25vw;
+  flex: 3;
+  display: flex;
+  align-items: flex-end;
+}
+
+.pic2text {
+  font-size: 3vw;
+  flex: 1;
+}
+
+.pic2:hover {
+  background-image: url("http://unsplash.it/300?image=434");
+}
+
+.pic2text:hover {
+  color: white;
+}
+
+.pic3 {
+  background: linear-gradient(rgba(30, 91, 143, 0.5), rgba(34, 111, 170, 0.4)), url("http://unsplash.it/300?image=44");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vw;
+  flex: 3;
+  display: flex;
+  align-items: flex-end;
+}
+
+.pic3text {
+  font-size: 3vw;
+  flex: 1;
+}
+
+.pic3:hover {
+  background-image: url("http://unsplash.it/300?image=44");
+}
+
+.pic3text:hover {
+  color: white;
+}
+
+.pic4 {
+  background: linear-gradient(rgba(30, 91, 143, 0.5), rgba(34, 111, 170, 0.4)), url("http://unsplash.it/300?image=244");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vw;
+  flex: 3;
+  display: flex;
+  align-items: flex-end;
+}
+
+.pic4text {
+  font-size: 3vw;
+  flex: 1;
+}
+
+.pic4:hover {
+  background-image: url("http://unsplash.it/300?image=244");
+}
+
+.pic4text:hover {
+  color: white;
+}
+
+/*.flexContainer {
+    display: flex;
+    flex:4;
+    display:center;
+    &>img {
+        width: 48vh;
+    }
+    &image {
+        position: relative;
+        width: 100%;
+        top: 100px;
+    }
+    h2 {
+        position: absolute;
+       top: 200px;
+       left: 0;
+       width: 100%;
+    }
+}*/
+/*desktop*/
+@media screen and (min-width: 768px) {
+  .flexbox {
+    flex-direction: row;
+  }
 }
