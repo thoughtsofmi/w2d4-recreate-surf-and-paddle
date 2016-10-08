@@ -7743,8 +7743,12 @@ button.close {
 .background {
   background: linear-gradient(rgba(30, 91, 143, 0.5), rgba(34, 111, 170, 0.4)), url("../img/backgroundheader.jpeg");
   background: cover;
-  height: 520px;
+  height: 42vw;
   width: 100%;
+}
+
+.fblue {
+  color: #083452;
 }
 
 .topmarg {
@@ -7752,21 +7756,21 @@ button.close {
 }
 
 .headleft {
-  font-size: 18px;
+  font-size: 1.5vw;
 }
 
 .headbottom {
-  top-margin: 0;
-  font-size: 14px;
+  top-margin: 10px;
+  font-size: 2vw;
 }
 
 .superlarge {
-  font-size: 100px;
+  font-size: 8vw;
   color: white;
 }
 
 li > img {
-  height: 40px;
+  height: 4vw;
 }
 
 .panel1 {
@@ -7785,7 +7789,7 @@ li > img {
 }
 
 .bodytext {
-  line-height: 60px;
+  line-height: 40px;
   margin-right: 60px;
 }
 
@@ -7808,7 +7812,7 @@ li > img {
 }
 
 .tfi {
-  font-color: #948f90;
+  color: #948f90;
   font-size: 14px;
 }
 
@@ -7818,6 +7822,11 @@ li > img {
   background: cover;
   height: 300px;
   width: 250px;
+}
+
+.sidebarp {
+  margin-right: 30px;
+  color: #787c95;
 }
 
 .flexbox {
