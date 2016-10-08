@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-    width: 100%;
+    //width: 100%;
 }
 
 .background {
@@ -14,30 +14,79 @@ body {
     height: 520px;
     width: 100%;
 }
+.topmarg {
+    margin: 20px 130px;
+}
+.headleft {
+    font-size: 18px;
+}
+.headbottom {
+    top-margin: 0;
+    font-size:14px;
+}
 .superlarge {
     font-size: 100px;
     color: $color1;
 }
 li>img {
-    height:20px;
+    height:40px;
 }
 .panel1 {
     margin: $margin $margin $margin 100px;
 }
 .blogtitle {
-    font-size: 50px;
+    font-size: 60px;
     color: $color2;
     font-weight: bold;
+}
+.woah {
+    font-color: $color2;
+    font-size: 30px;
+}
+.bodytext {
+    line-height: 60px;
+    margin-right: 60px;
+}
+
+.blogpic {
+    background: $gradient, url("../img/square.25.jpg");
+    background: cover;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+.bigblogpic {
+    background: $gradient, url("../img/square.100.jpg");
+    background-repeat: no-repeat;
+    background: cover;
+    //background-color: $color2;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.tfi {
+    font-color: $color3;
+    font-size: 14px;
+}
+.adpic {
+    background: $gradient, url("../img/ad.resize.jpg");
+    background-repeat: no-repeat;
+    background: cover;
+    //background-color: $color2;
+    height: 300px;
+    width: 250px;
 }
 .flexbox {
     display:flex;
     flex-direction: column;
     flex:12;
     width: 100%;
+    padding: 0 10px;
 
 }
 .pic1 {
-    background: $gradient, url("http://unsplash.it/300?image-222?");
+    background-image: $gradient, url("http://unsplash.it/300?image-222?");
     background-repeat: no-repeat;
     background-size: cover;
     height: 25vw;
@@ -52,9 +101,7 @@ li>img {
 
 .pic1:hover {
         background-image: url("http://unsplash.it/300?image=222");
-}
-.pic1text:hover {
-    color: white;
+        color: white;
 }
 .pic2 {
     background-image: $gradient, url("http://unsplash.it/300?image=434");
@@ -72,12 +119,11 @@ li>img {
 
 .pic2:hover {
         background-image: url("http://unsplash.it/300?image=434");
+        color: white;
 }
-.pic2text:hover {
-    color: white;
-}
+
 .pic3 {
-    background: $gradient, url("http://unsplash.it/300?image=44");
+    background-image: $gradient, url("http://unsplash.it/300?image=44");
     background-repeat: no-repeat;
     background-size: cover;
     height:25vw;
@@ -92,12 +138,10 @@ li>img {
 
 .pic3:hover {
         background-image: url("http://unsplash.it/300?image=44");
-}
-.pic3text:hover {
-    color: white;
+        color: white;
 }
 .pic4 {
-    background:$gradient, url("http://unsplash.it/300?image=244");
+    background-image:$gradient, url("http://unsplash.it/300?image=244");
     background-repeat: no-repeat;
     background-size: cover;
     height: 25vw;
@@ -112,31 +156,24 @@ li>img {
 
 .pic4:hover {
         background-image: url("http://unsplash.it/300?image=244");
+        color: white;
 }
-.pic4text:hover {
+//footer
+.footer {
+    background-color: rgba(8,52,82,1);
+    height: 40px;
+    display:flex;
     color: white;
+    align-items: center;
+}
+.left {
+    flex:1;
+}
+.right {
+    flex:1;
 }
 
 
-/*.flexContainer {
-    display: flex;
-    flex:4;
-    display:center;
-    &>img {
-        width: 48vh;
-    }
-    &image {
-        position: relative;
-        width: 100%;
-        top: 100px;
-    }
-    h2 {
-        position: absolute;
-       top: 200px;
-       left: 0;
-       width: 100%;
-    }
-}*/
 /*desktop*/
  @media screen and (min-width: 768px) {
      .flexbox {

@@ -7740,15 +7740,24 @@ button.close {
   box-sizing: border-box;
 }
 
-body {
-  width: 100%;
-}
-
 .background {
   background: linear-gradient(rgba(30, 91, 143, 0.5), rgba(34, 111, 170, 0.4)), url("../img/backgroundheader.jpeg");
   background: cover;
   height: 520px;
   width: 100%;
+}
+
+.topmarg {
+  margin: 20px 130px;
+}
+
+.headleft {
+  font-size: 18px;
+}
+
+.headbottom {
+  top-margin: 0;
+  font-size: 14px;
 }
 
 .superlarge {
@@ -7757,7 +7766,7 @@ body {
 }
 
 li > img {
-  height: 20px;
+  height: 40px;
 }
 
 .panel1 {
@@ -7765,9 +7774,50 @@ li > img {
 }
 
 .blogtitle {
-  font-size: 50px;
+  font-size: 60px;
   color: #083452;
   font-weight: bold;
+}
+
+.woah {
+  font-color: #083452;
+  font-size: 30px;
+}
+
+.bodytext {
+  line-height: 60px;
+  margin-right: 60px;
+}
+
+.blogpic {
+  background: linear-gradient(rgba(30, 91, 143, 0.5), rgba(34, 111, 170, 0.4)), url("../img/square.25.jpg");
+  background: cover;
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.bigblogpic {
+  background: linear-gradient(rgba(30, 91, 143, 0.5), rgba(34, 111, 170, 0.4)), url("../img/square.100.jpg");
+  background-repeat: no-repeat;
+  background: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.tfi {
+  font-color: #948f90;
+  font-size: 14px;
+}
+
+.adpic {
+  background: linear-gradient(rgba(30, 91, 143, 0.5), rgba(34, 111, 170, 0.4)), url("../img/ad.resize.jpg");
+  background-repeat: no-repeat;
+  background: cover;
+  height: 300px;
+  width: 250px;
 }
 
 .flexbox {
@@ -7775,10 +7825,11 @@ li > img {
   flex-direction: column;
   flex: 12;
   width: 100%;
+  padding: 0 10px;
 }
 
 .pic1 {
-  background: linear-gradient(rgba(30, 91, 143, 0.5), rgba(34, 111, 170, 0.4)), url("http://unsplash.it/300?image-222?");
+  background-image: linear-gradient(rgba(30, 91, 143, 0.5), rgba(34, 111, 170, 0.4)), url("http://unsplash.it/300?image-222?");
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vw;
@@ -7794,9 +7845,6 @@ li > img {
 
 .pic1:hover {
   background-image: url("http://unsplash.it/300?image=222");
-}
-
-.pic1text:hover {
   color: white;
 }
 
@@ -7817,14 +7865,11 @@ li > img {
 
 .pic2:hover {
   background-image: url("http://unsplash.it/300?image=434");
-}
-
-.pic2text:hover {
   color: white;
 }
 
 .pic3 {
-  background: linear-gradient(rgba(30, 91, 143, 0.5), rgba(34, 111, 170, 0.4)), url("http://unsplash.it/300?image=44");
+  background-image: linear-gradient(rgba(30, 91, 143, 0.5), rgba(34, 111, 170, 0.4)), url("http://unsplash.it/300?image=44");
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vw;
@@ -7840,14 +7885,11 @@ li > img {
 
 .pic3:hover {
   background-image: url("http://unsplash.it/300?image=44");
-}
-
-.pic3text:hover {
   color: white;
 }
 
 .pic4 {
-  background: linear-gradient(rgba(30, 91, 143, 0.5), rgba(34, 111, 170, 0.4)), url("http://unsplash.it/300?image=244");
+  background-image: linear-gradient(rgba(30, 91, 143, 0.5), rgba(34, 111, 170, 0.4)), url("http://unsplash.it/300?image=244");
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vw;
@@ -7863,31 +7905,25 @@ li > img {
 
 .pic4:hover {
   background-image: url("http://unsplash.it/300?image=244");
-}
-
-.pic4text:hover {
   color: white;
 }
 
-/*.flexContainer {
-    display: flex;
-    flex:4;
-    display:center;
-    &>img {
-        width: 48vh;
-    }
-    &image {
-        position: relative;
-        width: 100%;
-        top: 100px;
-    }
-    h2 {
-        position: absolute;
-       top: 200px;
-       left: 0;
-       width: 100%;
-    }
-}*/
+.footer {
+  background-color: #083452;
+  height: 40px;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex: 1;
+}
+
 /*desktop*/
 @media screen and (min-width: 768px) {
   .flexbox {
