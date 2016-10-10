@@ -1,5 +1,5 @@
 @import 'settings';
-@import '../bootstrap-sass-3.3.7/assets/stylesheets/bootstrap';
+
 
 * {
     box-sizing: border-box;
@@ -14,6 +14,7 @@ body {
     height: 42vw;
     width: 100%;
 }
+
 .fblue {
     color: $color2;
 }
@@ -37,13 +38,17 @@ li>img {
 .panel1 {
     margin: $margin $margin $margin 100px;
 }
+.color4 {
+    color: #106db3;
+}
 .blogtitle {
     font-size: 60px;
     color: $color2;
     font-weight: bold;
+    font-family: 'Archivo Narrow', sans-serif;
 }
 .woah {
-    font-color: $color2;
+    color: #106db3;
     font-size: 30px;
 }
 .bodytext {
@@ -67,6 +72,15 @@ li>img {
     height: 100px;
     width: 100px;
     border-radius: 50%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lightg {
+    color: #a3b3bf;
+}
+.ata {
+    margin-right: 30px;
 }
 .tfi {
     color: $color3;
@@ -80,16 +94,36 @@ li>img {
     height: 300px;
     width: 250px;
 }
+.sbarh{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 20px;
+}
 .sidebarp {
     margin-right: 30px;
     color: rgb(120, 124, 149);
+    line-height: 30px;
+    font-size: 12px;
+}
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+.mpp {
+    font-size: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .flexbox {
     display:flex;
     flex-direction: column;
     flex:12;
     width: 100%;
-    padding: 0 10px;
+    //padding: 0 10px;
 
 }
 .pic1 {
@@ -168,17 +202,14 @@ li>img {
 //footer
 .footer {
     background-color: rgba(8,52,82,1);
-    height: 40px;
-    display:flex;
+    height: 80px;
     color: white;
-    align-items: center;
 }
-.left {
-    flex:1;
+
+.iron {
+    height: 3vw;
 }
-.right {
-    flex:1;
-}
+
 
 
 /*desktop*/
