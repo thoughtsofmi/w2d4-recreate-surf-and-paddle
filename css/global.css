@@ -14,7 +14,7 @@
 }
 
 .topmarg {
-  margin: 20px 130px;
+  margin: 0 40px;
 }
 
 .headleft {
@@ -29,6 +29,7 @@
 .superlarge {
   font-size: 8vw;
   color: white;
+  padding-top: 50px;
 }
 
 li > img {
@@ -44,7 +45,7 @@ li > img {
 }
 
 .blogtitle {
-  font-size: 60px;
+  font-size: 6vw;
   color: #083452;
   font-weight: bold;
   font-family: 'Archivo Narrow', sans-serif;
@@ -52,7 +53,7 @@ li > img {
 
 .woah {
   color: #106db3;
-  font-size: 30px;
+  font-size: 4vw;
 }
 
 .bodytext {
@@ -125,7 +126,7 @@ hr {
 }
 
 .mpp {
-  font-size: 60px;
+  font-size: 6vw;
   padding-top: 30px;
   padding-bottom: 30px;
 }

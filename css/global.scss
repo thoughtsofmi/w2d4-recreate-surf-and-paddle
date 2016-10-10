@@ -19,7 +19,7 @@ body {
     color: $color2;
 }
 .topmarg {
-    margin: 20px 130px;
+    margin: 0 40px;
 }
 .headleft {
     font-size: 1.5vw;
@@ -31,6 +31,7 @@ body {
 .superlarge {
     font-size: 8vw;
     color: $color1;
+    padding-top: 50px;
 }
 li>img {
     height:4vw;
@@ -42,14 +43,14 @@ li>img {
     color: #106db3;
 }
 .blogtitle {
-    font-size: 60px;
+    font-size: 6vw;
     color: $color2;
     font-weight: bold;
     font-family: 'Archivo Narrow', sans-serif;
 }
 .woah {
     color: #106db3;
-    font-size: 30px;
+    font-size: 4vw;
 }
 .bodytext {
     line-height: 40px;
@@ -94,7 +95,7 @@ li>img {
     height: 300px;
     width: 250px;
 }
-.sbarh{
+.sbarh {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 20px;
 }
@@ -114,7 +115,7 @@ hr {
     border-width: 1px;
 }
 .mpp {
-    font-size: 60px;
+    font-size: 6vw;
     padding-top: 30px;
     padding-bottom: 30px;
 }
